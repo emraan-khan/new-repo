@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>
+        <%=title %>
+    </title>
+   <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h1>
+        My Contact List
+    </h1>
+
+    <ul type="none">
+        <% for(let i of Contact_List) {%>
+            <li>
+                <p><%= i.name %></p>
+                <p><%= i.phone %></p>
+                <a href="/delete-contact/?phone=<%=i.phone %>">
+                <button class="dlt-btn">Delete</button>
+            </a>
+            </li>
+            <% } %>
+
+    </ul>
+
+    <form action="/create-contact" method="POST">
+        <input type="text" name="name" placeholder='name' required/>
+        <input type="text" name="phone" placeholder='phone' required/>
+        <button type="submit" class="btn">Add </button>
+    </form>
+    <script src="/js/home.js"></script>
+</body>
+</html>
