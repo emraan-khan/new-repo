@@ -4,6 +4,9 @@ const port = 8000;
 
 const app = express();
 
+// getting mongo db in our project
+const db=require('./config/mongoose')
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded());
