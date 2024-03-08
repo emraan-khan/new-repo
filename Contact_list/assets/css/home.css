@@ -30,7 +30,12 @@ li:hover{
     background-color: gray;
     color: white;
 }
-
 .dlt-btn{
-    /* height: 20px; */
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.dlt-btn:hover{
+    background-color:  rgb(135, 135, 219);
+    color: white;
 }
