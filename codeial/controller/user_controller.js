@@ -18,9 +18,9 @@ module.exports.signUp = function(req,res){
 // create action for user controller
 module.exports.create = function(req,res){
     //TODO
-}
+};
 
 //sign in and create session for user
 module.exports.createSession = function(req, res){
 
-}
+};
